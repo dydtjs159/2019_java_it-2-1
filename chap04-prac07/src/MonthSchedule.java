@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Day {
-	private String work; 
+	private String work; //
 	public void set(String work) { this.work = work; }
 	public String get() { return work; }
 	public void show() {
@@ -12,7 +12,7 @@ class Day {
 
 public class MonthSchedule {
 	private int nDays; 
-	private Day [] days; 
+	private Day [] days; //
 	private Scanner scanner;
 	
 	public MonthSchedule(int nDays) {
@@ -31,7 +31,7 @@ public class MonthSchedule {
 		String work = scanner.next();
 		day--;
 		
-		if(day < 0 || day > nDays) { 
+		if(day < 0 || day > nDays) { //
 			System.out.println("날짜 잘못 입력하였습니다.!");			
 			return;
 		}
@@ -42,7 +42,7 @@ public class MonthSchedule {
 		System.out.print("날짜(1~30)?");
 		int day = scanner.nextInt();
 		day--;
-		if(day < 0 || day > nDays) { 
+		if(day < 0 || day > nDays) { //
 			System.out.println("날짜 잘못 입력하였습니다.!");			
 			return;
 		}
@@ -73,7 +73,7 @@ public class MonthSchedule {
 		}		
 	}
 	public static void main(String[] args) {
-		MonthSchedule april = new MonthSchedule(30); 
+		MonthSchedule april = new MonthSchedule(30); //
 		april.run();
 	}
 
